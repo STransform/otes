@@ -28,6 +28,11 @@ The OTES project consists of multiple modules, including HRMS, CRM, Project Mana
  ```
 ### Installation Steps
 
+ **Step 1. Update The System:** 
+ ```bash
+   sudo apt update
+    ```
+
 1. **Clone the repository:**
 
     ```bash
