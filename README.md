@@ -28,39 +28,143 @@ The OTES project consists of multiple modules, including HRMS, CRM, Project Mana
  ```
 ### Installation Steps
 
-1.  **Update The System:**
+1. **Update The System:**
     
  ```bash
    sudo apt update
-    ```
-
-1. **Clone the repository:**
-
-    ```bash
-    git clone https://github.com/STransform/otes.git
-    ```
-
-2. **Navigate to the project directory:**
+  ```
+2. **Add System User:**
 
     ```bash
-    cd your-repo
+    sudo useradd -m -d /opt/odoo16 -U -r -s /bin/bash odoo16
+    ```
+
+2. **Install Dependencies:**
+
+    ```bash
+   sudo apt install build-essential wget git python3-pip python3-dev python3-venv python3-wheel libfreetype6-dev libxml2-dev libzip-dev libsasl2-dev python3-setuptools libjpeg-dev zlib1g-dev libpq-dev libxslt1-dev libldap2-dev libtiff5-dev libopenjp2-7-dev
     ```
 
 3. **Install dependencies:**
 
     ```bash
-    pip install -r requirements.txt
+    sudo apt install postgresql
+    ```
+4. **add a new postgresql use:**
+
+    ```bash
+   sudo su - postgres -c "createuser -s odoo16"
+    ```
+3. **Install dependencies:**
+
+    ```bash
+    sudo apt install postgresql
+    ```
+4. **add a new postgresql use:**
+
+    ```bash
+   sudo su - postgres -c "createuser -s odoo16"
     ```
 
-4. **Additional setup steps**
+5. **Install Wkhtmltopdf:**
 
-## Usage
+    ```bash
+    sudo apt install wkhtmltopdf
+    ```
 
-### Running the Application
+6. **wkhtmltopdf --version:**
 
-TO include commands to start a server, execute a script, etc.
+    ```bash
+    pip install -r requirements.txt
+    ```
+7. **install Odoo under that username:**
 
-```bash
-python app.py
+    ```bash
+    sudo su - odoo16
+    ```
+
+
+8. **clone the repository:**
+
+    ```bash
+    pgit clone https://github.com/STransform/otes.git
+    ```
+9. **clone the repository:**
+
+    ```bash
+    pgit clone https://github.com/STransform/otes.git
+    ```
+10. **create a new python virtual environment:**
+
+    ```bash
+    python3 -m venv odoo16-venv
+    ```
+    3. **activate:**
+
+    ```bash
+    source odoo16-venv/bin/activate
+    ```
+11. **let’s install Odoo:**
+
+    ```bash
+    pip3 install wheel
+    pip3 install -r odoo16/requirements.txt
+    deactivate
+    mkdir /opt/odoo16/odoo16/custom-addons
+    exit
+    ```
+12. **sudo nano /etc/odoo16.conf**
+
+    ```bash
+   
+   [options]
+admin_passwd = ch@ngem3
+db_host = False
+db_port = False
+db_user = odoo16
+db_password = False
+addons_path = /opt/odoo16/odoo16/addons,/opt/odoo16/odoo16/custom-addons
+xmlrpc_port = 8069
+    ```
+
+13. **Create Odoo Systemd Unit file:**
+
+    ```bash
+    sudo nano /etc/systemd/system/odoo16.service
+    
+    ```
+      ```bash
+ [Unit]
+Description=Odoo16
+Requires=postgresql.service
+After=network.target postgresql.service
+[Service]
+Type=simple
+SyslogIdentifier=odoo16
+PermissionsStartOnly=true
+User=odoo16
+Group=odoo16
+ExecStart=/opt/odoo16/odoo16-venv/bin/python3 /opt/odoo16/odoo16/odoo-bin -c /etc/odoo16.conf
+StandardOutput=journal+console
+[Install]
+WantedBy=multi-user.target
+    
+    ```
+14. **Reload:**
+
+    ```bash
+    sudo systemctl daemon-reload
+    ```
+15. **Start service:**
+
+    ```bash
+   sudo systemctl start odoo16
+    ```
+16. **Check status:**
+
+    ```bash
+   sudo systemctl status odoo16
+    ```
+
 
 
