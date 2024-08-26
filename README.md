@@ -160,6 +160,7 @@ WantedBy=multi-user.target
     ```bash
    sudo systemctl start odoo16
     ```
+    
 16. **Check status:**
 
     ```bash
