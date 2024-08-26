@@ -114,7 +114,7 @@ The OTES project consists of multiple modules, including HRMS, CRM, Project Mana
     exit
     ```
 12. **sudo nano /etc/odoo16.conf**
-    **Copy and save :**
+    Copy and save 
     ```bash 
    [options]
 admin_passwd = .....
