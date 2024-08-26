@@ -1,7 +1,7 @@
-#OTES(OTech Enterpsise Software)
+# OTES(OTech Enterpsise Software)
 This system consists of multiple modules. Initially, it is launched with the HRMS module, which includes user management. Additional modules, such as CRM,Payroll, will be integrated at a later stage.
 
-#Technology stack
+# Technology stack
 1. Python: The primary programming language used for server-side development and business logic. 
 OTES's core framework and modules are written in Python.
 JavaScript: Used for client-side interactions and dynamic functionalities in the web interface.
@@ -22,6 +22,6 @@ JavaScript: Used for client-side interactions and dynamic functionalities in the
    Odoo supports both XML-RPC and JSON-RPC for external integrations and communication with other systems.
 
 
-#Getting started with Odoo
+# Getting started with Odoo
 Follow the following steps to set up the development environment for your project.
-#Cloning the Repository to your local machine:
+# Cloning the Repository to your local machine:
