@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_salary_component_user,access_salary_component_user,model_salary_component,,1,0,0,0
+access_payroll_structure_user,access_payroll_structure_user,model_payroll_structure,,1,0,0,0
+access_payslip_user,access_payslip_user,model_payroll_payslip,,1,0,0,0
