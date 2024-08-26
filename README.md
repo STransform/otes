@@ -24,7 +24,7 @@ The OTES project consists of multiple modules, including HRMS, CRM, Project Mana
 
 ### Prerequisites
  ```bash
-- Prerequisites or dependencies (Python, PostgreSQL ,XML,JS,OWL)
+- Prerequisites or dependencies (Python, PostgreSQL ,XML,JS,OWL,OS)
  ```
 ### Installation Steps
 
@@ -118,7 +118,7 @@ The OTES project consists of multiple modules, including HRMS, CRM, Project Mana
     ```bash
    
    [options]
-admin_passwd = ch@ngem3
+admin_passwd = .....
 db_host = False
 db_port = False
 db_user = odoo16
@@ -131,9 +131,10 @@ xmlrpc_port = 8069
 
     ```bash
     sudo nano /etc/systemd/system/odoo16.service
-    
     ```
-      ```bash
+14. **Copy and save :**
+
+```bash
  [Unit]
 Description=Odoo16
 Requires=postgresql.service
@@ -148,20 +149,19 @@ ExecStart=/opt/odoo16/odoo16-venv/bin/python3 /opt/odoo16/odoo16/odoo-bin -c /et
 StandardOutput=journal+console
 [Install]
 WantedBy=multi-user.target
-    
-    ```
-14. **Reload:**
+```
+15. **Reload:**
 
     ```bash
     sudo systemctl daemon-reload
     ```
-15. **Start service:**
+16. **Start service:**
 
     ```bash
    sudo systemctl start odoo16
     ```
     
-16. **Check status:**
+17. **Check status:**
 
     ```bash
    sudo systemctl status odoo16
