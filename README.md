@@ -5,10 +5,10 @@ This system consists of multiple modules. Initially, it is launched with the HRM
 ## Technology stack
 
 - 1. Python:Programming language
-- 2. JS:
+- 2. JS:Client-side interactions and dynamic functionalities
 - 3. owl:Odoo Web library (framework)
 - 4. Werkzeug:Web Server
-- 5. QWeb:templating engine
+- 5. QWeb:templating engine(generating HTML and XML views)
 - 6. Bootstrap:CSS framework
 - 7. XML-RPC:API and Integration
      
@@ -19,7 +19,7 @@ Provide more details about the project here. Explain what the project does and w
 ## Features
 
 - List of key features or functionalities
-- Highlight any unique aspects of your project
+- Highlight any unique aspects of OTES project
 
 ## Installation
 
@@ -53,7 +53,7 @@ Provide more details about the project here. Explain what the project does and w
 
 ### Running the Application
 
-Provide instructions on how to run the application or project. This might include commands to start a server, execute a script, etc.
+TO include commands to start a server, execute a script, etc.
 
 ```bash
 python app.py
