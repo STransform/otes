@@ -92,8 +92,7 @@ The OTES project consists of multiple modules, including HRMS, CRM, Project Mana
     exit
     ```
 12. **sudo nano /etc/odoo16.conf**
-    Copy and save 
-    ```bash 
+```bash 
    [options]
 admin_passwd = .....
 db_host = False
@@ -102,7 +101,7 @@ db_user = odoo16
 db_password = False
 addons_path = /opt/odoo16/odoo16/addons,/opt/odoo16/odoo16/custom-addons
 xmlrpc_port = 8069
-    ```
+```
 
 13. **Create Odoo Systemd Unit file:**
     ```bash
