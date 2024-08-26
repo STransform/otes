@@ -1,15 +1,15 @@
-# OTES(OTech Enterpsise Software)
+# OTES(OTech Enterprise Software)
 
 This system consists of multiple modules. Initially, it is launched with the HRMS module, which includes user management. Additional modules, such as CRM,Payroll, will be integrated at a later stage.
   
 ## Technology stack
-- [Python:Programming language](#Python:Programming language)
-- [JS:Client-side interactions and dynamic functionalities](#JS:Client-side interactions and dynamic functionalities)
-- [owl:Odoo Web library (framework)](#owl:Odoo Web library (framework))
-- [Werkzeug:Web Server](#Werkzeug:Web Server)
-- [QWeb:templating engine(generating HTML and XML views)](#QWeb:templating engine(generating HTML and XML views))
-- [Bootstrap:CSS framework](#Bootstrap:CSS framework)
-- [XML-RPC:API and Integration](#XML-RPC:API and Integration)
+- Python: Programming language
+- JS: Client-side interactions and dynamic functionalities
+- owl: Odoo Web library (framework)
+- Werkzeug: Web Server
+- QWeb: templating engine(generating HTML and XML views)
+- Bootstrap: CSS framework
+- XML-RPC: API and Integration
    
 ## Introduction
 ```bash
@@ -46,7 +46,7 @@ The OTES project consists of multiple modules, including HRMS, CRM, Project Mana
     pip install -r requirements.txt
     ```
 
-4. **Additional setup steps if needed**
+4. **Additional setup steps**
 
 ## Usage
 
