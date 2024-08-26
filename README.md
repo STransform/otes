@@ -14,7 +14,7 @@ JavaScript: Used for client-side interactions and dynamic functionalities in the
 5. Templating Engine
    QWeb: Odoo's templating engine used for generating HTML and XML views.
    It is designed for flexibility and integration with Odoo’s business logic.
-6. Frontend Technologies
+6. Frontend Technologies: 
    Bootstrap: A popular CSS framework used for responsive design in Odoo’s web interface.
    OWL (Odoo Web Library): A lightweight framework developed by Odoo for building modern, reactive web components.
 7. API and Integration
