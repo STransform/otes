@@ -1,32 +1,27 @@
-[![Build Status](https://runbot.odoo.com/runbot/badge/flat/1/master.svg)](https://runbot.odoo.com/runbot)
-[![Tech Doc](https://img.shields.io/badge/master-docs-875A7B.svg?style=flat&colorA=8F8F8F)](https://www.odoo.com/documentation/16.0)
-[![Help](https://img.shields.io/badge/master-help-875A7B.svg?style=flat&colorA=8F8F8F)](https://www.odoo.com/forum/help-1)
-[![Nightly Builds](https://img.shields.io/badge/master-nightly-875A7B.svg?style=flat&colorA=8F8F8F)](https://nightly.odoo.com/)
+#OTES(OTech Enterpsise Software)
+This system consists of multiple modules. Initially, it is launched with the HRMS module, which includes user management. Additional modules, such as CRM,Payroll, will be integrated at a later stage.
 
-Odoo
-----
+#Technology stack
+1. Python: The primary programming language used for server-side development and business logic. 
+OTES's core framework and modules are written in Python.
+JavaScript: Used for client-side interactions and dynamic functionalities in the web interface.
+2. Web Framework
+   OWL.
+3. Database
+   PostgreSQL
+4. Web Server
+   Werkzeug: A lightweight WSGI (Web Server Gateway Interface) server used by Odoo to handle HTTP requests during development. In production, it is often paired with a more robust web server like Nginx or Apache.
+5. Templating Engine
+   QWeb: Odoo's templating engine used for generating HTML and XML views.
+   It is designed for flexibility and integration with Odoo’s business logic.
+6. Frontend Technologies
+   Bootstrap: A popular CSS framework used for responsive design in Odoo’s web interface.
+   OWL (Odoo Web Library): A lightweight framework developed by Odoo for building modern, reactive web components.
+7. API and Integration
+   XML-RPC and JSON-RPC: Protocols used for API interactions.
+   Odoo supports both XML-RPC and JSON-RPC for external integrations and communication with other systems.
 
-Odoo is a suite of web based open source business apps.
 
-The main Odoo Apps include an <a href="https://www.odoo.com/page/crm">Open Source CRM</a>,
-<a href="https://www.odoo.com/app/website">Website Builder</a>,
-<a href="https://www.odoo.com/app/ecommerce">eCommerce</a>,
-<a href="https://www.odoo.com/app/inventory">Warehouse Management</a>,
-<a href="https://www.odoo.com/app/project">Project Management</a>,
-<a href="https://www.odoo.com/app/accounting">Billing &amp; Accounting</a>,
-<a href="https://www.odoo.com/app/point-of-sale-shop">Point of Sale</a>,
-<a href="https://www.odoo.com/app/employees">Human Resources</a>,
-<a href="https://www.odoo.com/app/social-marketing">Marketing</a>,
-<a href="https://www.odoo.com/app/manufacturing">Manufacturing</a>,
-<a href="https://www.odoo.com/">...</a>
-
-Odoo Apps can be used as stand-alone applications, but they also integrate seamlessly so you get
-a full-featured <a href="https://www.odoo.com">Open Source ERP</a> when you install several Apps.
-
-Getting started with Odoo
--------------------------
-
-For a standard installation please follow the <a href="https://www.odoo.com/documentation/16.0/administration/install/install.html">Setup instructions</a>
-from the documentation.
-
-To learn the software, we recommend the <a href="https://www.odoo.com/slides">Odoo eLearning</a>, or <a href="https://www.odoo.com/page/scale-up-business-game">Scale-up</a>, the <a href="https://www.odoo.com/page/scale-up-business-game">business game</a>. Developers can start with <a href="https://www.odoo.com/documentation/16.0/developer/howtos.html">the developer tutorials</a>
+#Getting started with Odoo
+Follow the following steps to set up the development environment for your project.
+#Cloning the Repository to your local machine:
