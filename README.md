@@ -4,24 +4,14 @@ This system consists of multiple modules. Initially, it is launched with the HRM
 
 ## Technology stack
 
-- 1. Python: The primary programming language used for server-side development and business logic. 
-OTES's core framework and modules are written in Python.
-JavaScript: Used for client-side interactions and dynamic functionalities in the web interface.
--2. Web Framework
-   OWL.
--3. Database
-   PostgreSQL
--4. Web Server
-   Werkzeug: A lightweight WSGI (Web Server Gateway Interface) server used by Odoo to handle HTTP requests during development.
--5. Templating Engine
-   QWeb: Odoo's templating engine used for generating HTML and XML views.
--6. Frontend Technologies: 
-   Bootstrap: A popular CSS framework used for responsive design in Odoo’s web interface.
-   OWL (Odoo Web Library): A lightweight framework developed by Odoo for building modern, reactive web components.
--7. API and Integration
-   XML-RPC and JSON-RPC: Protocols used for API interactions.
-   Odoo supports both XML-RPC and JSON-RPC for external integrations and communication with other systems.
-
+- 1. Python:Programming language
+- 2. JS:
+- 3. owl:Odoo Web library (framework)
+- 4. Werkzeug:Web Server
+- 5. QWeb:templating engine
+- 6. Bootstrap:CSS framework
+- 7. XML-RPC:API and Integration
+     
 ## Introduction
 
 Provide more details about the project here. Explain what the project does and why it is useful or important. You can also include a screenshot or demo here.
