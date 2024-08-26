@@ -151,10 +151,9 @@ StandardOutput=journal+console
 WantedBy=multi-user.target
 ```
 15. **Reload:**
-
-    ```bash
-    sudo systemctl daemon-reload
-    ```
+```bash
+sudo systemctl daemon-reload
+```
 16. **Start service:**
 
     ```bash
