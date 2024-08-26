@@ -83,7 +83,7 @@ The OTES project consists of multiple modules, including HRMS, CRM, Project Mana
     ```bash
     source odoo16-venv/bin/activate
     ```
-11. **let’s install Odoo:**
+11. **install Odoo:**
     ```bash
     pip3 install wheel
     pip3 install -r odoo16/requirements.txt
@@ -91,7 +91,11 @@ The OTES project consists of multiple modules, including HRMS, CRM, Project Mana
     mkdir /opt/odoo16/odoo16/custom-addons
     exit
     ```
-12. **sudo nano /etc/odoo16.conf**
+12. **Create database systemd unit file**
+```bash 
+sudo nano /etc/odoo16.conf
+```
+13. **Copy and save :**
 ```bash 
    [options]
 admin_passwd = .....
@@ -102,12 +106,11 @@ db_password = False
 addons_path = /opt/odoo16/odoo16/addons,/opt/odoo16/odoo16/custom-addons
 xmlrpc_port = 8069
 ```
-
-13. **Create Odoo Systemd Unit file:**
+14. **Create Odoo Systemd Unit file:**
     ```bash
     sudo nano /etc/systemd/system/odoo16.service
     ```
-14. **Copy and save :**
+15. **Copy and save :**
 ```bash
  [Unit]
 Description=Odoo16
@@ -124,16 +127,16 @@ StandardOutput=journal+console
 [Install]
 WantedBy=multi-user.target
 ```
-15. **Reload:**
+16. **Reload:**
 ```bash
 sudo systemctl daemon-reload
 ```
-16. **Start service:**
+17. **Start service:**
     ```bash
    sudo systemctl start odoo16
     ```
     
-17. **Check status:**
+18. **Check status:**
     ```bash
    sudo systemctl status odoo16
     ```
