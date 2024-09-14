@@ -1,19 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <template>
     <div t-name='res_config_edition' owl="1">
-        <div class="col-12 o_setting_box" id="edition">
-            <div class="o_setting_right_pane">
-                <div class="user-heading">
-                    <h3 class="px-0">
-                        Odoo <t t-esc="serverVersion"/>
-                        (Community Edition)
-                    </h3>
-                </div>
-                <div>
-                    <div class="tab-content">
-                        <div role="tabpanel" id="settings" class="tab-pane active text-muted o_web_settings_compact_subtitle">
-                            <small>Copyright © 2004 <a target="_blank" href="https://www.odoo.com" style="text-decoration: underline;">Odoo S.A.</a> <a id="license" target="_blank" href="http://www.gnu.org/licenses/lgpl.html" style="text-decoration: underline;">GNU LGPL Licensed</a></small>
+        <div class="o_setting_box" id="edition" style="width: 100vw; background-color: #00008B; color: white; padding: 10px 0; margin: 0; position: relative; bottom: 0; left: 47%; transform: translateX(-50%); z-index: 9999;">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-md-4 footer-about" >
+                        <a href="httsp://otech.com" class="d-flex align-items-center">
+                            <span class="sitename" style="color:white;margin-left:65px;">OTech Engineering</span>
+                        </a>
+                        <div class="footer-contact pt-3">
+                            <p style="margin-left:70px;">Ayertena,</p>
+                            <p style="margin-left:70px;">Addis Ababa, Ethiopia</p>
+                            <p class="mt-3" style="margin-left:70px;"><strong>Phone:</strong> <span>+251 9xxxx</span></p>
+                            <p style="margin-left:70px;"><strong>Email:</strong> <span>info@otech.com</span></p>
                         </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 footer-links">
+                        <h4 style="color:white;">OTech ERP</h4>
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="color: white;">HRMS</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="color: white;">CRM</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="color: white;">Finance</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="color: white;">Inventory</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="color: white;">PMS</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="color: white;">Production</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 footer-links">
+                        <h4 style="color:white;">Our Services</h4>
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="color: white;">Saas</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="color: white;">Iaas</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="color: white;">Caas</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="color: white;">Training</a></li>
+                        </ul>
+                    </div>
+
+                    
+                </div>
+
+                <div class="container copyright text-center mt-4">
+                    <div class="credits">
+                        Designed and Developed by <a href="https://otech.com/" style="color: white;">OTech Engineering</a>
                     </div>
                 </div>
             </div>

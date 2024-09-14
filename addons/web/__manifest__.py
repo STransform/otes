@@ -288,6 +288,7 @@ This module provides the core of the Odoo Web Client.
             'web/static/src/legacy/xml/kanban.xml',
             'web/static/src/legacy/xml/search_panel.xml',
             'web/static/src/legacy/xml/week_days.xml',
+            'web/static/src/scss/otech_style.scss',# newly added for menu side bar
             # Don't include dark mode files in light mode
             ('remove', 'web/static/src/**/*.dark.scss'),
         ],
